@@ -4,6 +4,12 @@ import java.util.Iterator;
 
 public class BrunoQueue<T> implements Iterable<T> {
 
+    private static String COLLECTION_NAME = "Iterable bruno queue";
+
+    public static String getCollectionName() {
+        return COLLECTION_NAME;
+    }
+
     private QueueValue<T> nextValue;
     private QueueValue<T> lastValue;
 
